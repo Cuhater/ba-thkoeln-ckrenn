@@ -1,10 +1,6 @@
 # === Charigame ===
 Contributors: ([Christian Krenn](https://github.com/christiankrenn))
 Tags: wordpress-plugin, wp_scheduled_tasks, browsergame, carbonfields, gutenberg
-Requires at least: 4.5
-Tested up to: 6.5.2
-Requires PHP: 5.6
-Stable tag: 0.3.0
 
 Charigame is a versatile fundraising plugin designed to streamline your donation campaigns with ease. With the ability to run multiple campaigns concurrently, this plugin empowers you to manage diverse fundraising initiatives effortlessly.
 
