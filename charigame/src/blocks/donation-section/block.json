@@ -1,0 +1,51 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "charigame/donation-section",
+  "title": "Donation Section",
+  "icon": "money-alt",
+  "category": "charigame-blocks",
+  "example": {
+    "attributes": {
+      "logo": "",
+      "campaign_title": "Willkommen zu unserer Kampagne",
+      "campaign_desc_text": "Beschreibungstext der Kampagne",
+      "game_type_title": "Spieltyp",
+      "game_type_excerpt": "Beschreibung des Spieltyps",
+      "valid_until": "",
+      "torn_bottom": "",
+      "torn_top": ""
+    }
+  },
+  "attributes": {
+    "headline": {
+      "type": "string",
+      "default": "Der aktuelle Spendenstand im Überblick"
+    },
+    "background_type": {
+      "type": "string",
+      "default": "bg-white"
+    },
+    "barColor": {
+      "type": "string",
+      "default": ""
+    },
+    "donationDescText": {
+      "type": "string",
+      "default": "Aktueller Spendentopf insgesamt:"
+    },
+    "donationTitle": {
+      "type": "string",
+      "default": "Die Spendenverteilung im Überblick"
+    },
+    "textColor": {
+      "type": "string",
+      "default": "text-inherit"
+    },
+    "borderStyle": {
+      "type": "string",
+      "default": "border-none"
+    }
+  },
+  "render": "file:./render.php"
+}

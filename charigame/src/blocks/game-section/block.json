@@ -1,0 +1,32 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "charigame/game-section",
+  "title": "Game Section",
+  "icon": "games",
+  "category": "charigame-blocks",
+  "example": {
+    "attributes": {
+
+    }
+  },
+  "attributes": {
+    "gameType": {
+      "type": "string",
+      "default": ""
+    },
+    "headline": {
+      "type": "string",
+      "default": "Das Spiel"
+    },
+    "textColor": {
+      "type": "string",
+      "default": "text-inherit"
+    },
+    "background_type": {
+      "type": "string",
+      "default": "bg-white"
+    }
+  },
+  "render": "file:./render.php"
+}

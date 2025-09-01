@@ -1,0 +1,108 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "charigame/email-template",
+  "title": "Email Template",
+  "icon": "email",
+  "category": "charigame-blocks",
+  "example": {
+    "attributes": {
+      "header_image": "",
+      "header_claim": "Willkommen zu unserer E-Mail-Kampagne",
+      "headline": "E-Mail-Headline",
+      "content": "Hier steht der E-Mail-Inhalt",
+      "cta_text": "Zur Aktion",
+      "cta_color": "#2673AA",
+      "info": "Zusätzliche Informationen",
+      "signature": "Mit freundlichen Grüßen",
+      "social_media": [],
+      "imprint_title": "Impressum:",
+      "imprint_background_color": "#28333E",
+      "imprint_text_color": "#FFFFFF",
+      "imprint_content": ""
+    }
+  },
+  "attributes": {
+    "header_image": {
+      "type": "string",
+      "default": ""
+    },
+    "header_claim": {
+      "type": "string",
+      "default": "Willkommen zu unserer E-Mail-Kampagne"
+    },
+    "header_claim_color": {
+      "type": "string",
+      "default": "#2673AA"
+    },
+    "headline": {
+      "type": "string",
+      "default": "E-Mail-Headline"
+    },
+    "headline_color": {
+      "type": "string",
+      "default": "#000000"
+    },
+    "content": {
+      "type": "string",
+      "default": "Hier steht der E-Mail-Inhalt"
+    },
+    "cta_text": {
+      "type": "string",
+      "default": "Zur Aktion"
+    },
+    "cta_color": {
+      "type": "string",
+      "default": "#2673AA"
+    },
+    "cta_url": {
+      "type": "string",
+      "default": "#"
+    },
+    "info": {
+      "type": "string",
+      "default": "Zusätzliche Informationen"
+    },
+    "signature": {
+      "type": "string",
+      "default": "Mit freundlichen Grüßen"
+    },
+    "social_media": {
+      "type": "array",
+      "default": []
+    },
+    "imprint_title": {
+      "type": "string",
+      "default": "Impressum:"
+    },
+    "imprint_background_color": {
+      "type": "string",
+      "default": "#28333E"
+    },
+    "imprint_text_color": {
+      "type": "string",
+      "default": "#FFFFFF"
+    },
+    "imprint_content": {
+      "type": "string",
+      "default": ""
+    },
+    "game_code_text": {
+      "type": "string",
+      "default": "Den Code können Sie unter der folgenden Adresse eingeben:"
+    },
+    "validity_text": {
+      "type": "string",
+      "default": "Die Teilnahme ist exklusiv für Sie vom {valid_from} bis zum {valid_until} verfügbar."
+    },
+    "closing_text": {
+      "type": "string",
+      "default": "Wir freuen uns auf Ihre Teilnahme!"
+    },
+    "add_code_parameter": {
+      "type": "boolean",
+      "default": true
+    }
+  },
+  "render": "file:./render.php"
+}

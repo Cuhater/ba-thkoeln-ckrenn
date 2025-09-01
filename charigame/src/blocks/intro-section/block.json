@@ -1,0 +1,52 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "charigame/intro-section",
+  "title": "Intro Section",
+  "icon": "welcome-view-site",
+  "category": "charigame-blocks",
+  "example": {
+    "attributes": {
+      "logo": "",
+      "campaign_title": "Willkommen zu unserer Kampagne",
+      "campaign_desc_text": "Beschreibungstext der Kampagne",
+      "game_type_title": "Spieltyp",
+      "game_type_excerpt": "Beschreibung des Spieltyps",
+      "valid_until": "",
+      "torn_bottom": "",
+      "torn_top": ""
+    }
+  },
+  "attributes": {
+    "background_type": {
+      "type": "string",
+      "default": ""
+    },
+    "logo": {
+      "type": "string",
+      "default": ""
+    },
+    "campaign_title": {
+      "type": "string",
+      "default": "Willkommen zu unserer Kampagne",
+      "__experimentalRole": "content"
+    },
+    "campaign_desc_text": {
+      "type": "string",
+      "default": "Beschreibungstext der Kampagne"
+    },
+    "game_type_title": {
+      "type": "string",
+      "default": "Spieltyp"
+    },
+    "textColor": {
+      "type": "string",
+      "default": "text-inherit"
+    },
+    "borderStyle": {
+      "type": "string",
+      "default": "border-none"
+    }
+  },
+  "render": "file:./render.php"
+}

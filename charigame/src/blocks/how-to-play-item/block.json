@@ -1,0 +1,50 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "charigame/how-to-play-item",
+  "title": "How to Play Item",
+  "icon": "block-default",
+  "category": "charigame-blocks",
+  "parent": ["charigame/how-to-play-section"],
+  "example": {
+    "attributes": {
+      "headline": "Spielschritt",
+      "body": "Beschreibung des Spielschritts"
+    }
+  },
+  "attributes": {
+    "icon": {
+      "type": "string",
+      "default": "academic-cap"
+    },
+    "headline": {
+      "type": "string",
+      "default": "Überschrift"
+    },
+    "body": {
+      "type": "string",
+      "default": "Beschreibung"
+    },
+    "headlineColor": {
+      "type": "string",
+      "default": "text-inherit"
+    },
+    "textColor": {
+      "type": "string",
+      "default": "text-inherit"
+    },
+    "iconColor": {
+      "type": "string",
+      "default": "text-inherit"
+    },
+    "iconBgColor": {
+      "type": "string",
+      "default": "bg-primary"
+    },
+    "backgroundColor": {
+      "type": "string",
+      "default": "bg-secondary"
+    }
+  },
+  "render": "file:./render.php"
+}

@@ -1,0 +1,52 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "charigame/how-to-play-section",
+  "title": "How to Play Section",
+  "icon": "editor-help",
+  "category": "charigame-blocks",
+  "example": {
+    "attributes": {
+      "headline": "So funktioniert das Spiel"
+    },
+    "innerBlocks": [
+      {
+        "name": "charigame/how-to-play-item",
+        "attributes": {
+          "headline": "Schritt 1",
+          "body": "Erste Anleitung"
+        }
+      },
+      {
+        "name": "charigame/how-to-play-item",
+        "attributes": {
+          "headline": "Schritt 2",
+          "body": "Zweite Anleitung"
+        }
+      }
+    ]
+  },
+  "attributes": {
+    "background_type": {
+      "type": "string",
+      "default": "bg-white"
+    },
+    "headline": {
+      "type": "string",
+      "default": "So funktioniert das Spiel"
+    },
+    "columns": {
+      "type": "string",
+      "default": "md:grid-cols-2 lg:grid-cols-4"
+    },
+    "gap": {
+      "type": "string",
+      "default": "gap-8"
+    },
+    "textColor": {
+      "type": "string",
+      "default": "text-inherit"
+    }
+  },
+  "render": "file:./render.php"
+}

@@ -1,0 +1,58 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "charigame/recipient-section",
+  "title": "Recipient Section",
+  "icon": "buddicons-buddypress-logo",
+  "category": "charigame-blocks",
+  "example": {
+    "attributes": {
+      "logo": "",
+      "campaign_title": "Willkommen zu unserer Kampagne",
+      "campaign_desc_text": "Beschreibungstext der Kampagne",
+      "game_type_title": "Spieltyp",
+      "game_type_excerpt": "Beschreibung des Spieltyps",
+      "valid_until": "",
+      "torn_bottom": "",
+      "torn_top": ""
+    }
+  },
+  "attributes": {
+    "background_type": {
+      "type": "string",
+      "default": ""
+    },
+    "logo": {
+      "type": "string",
+      "default": ""
+    },
+    "headline": {
+      "type": "string",
+      "default": "Wir spenden an diese Organisationen"
+    },
+    "campaign_desc_text": {
+      "type": "string",
+      "default": "Beschreibungstext der Kampagne"
+    },
+    "game_type_title": {
+      "type": "string",
+      "default": "Spieltyp"
+    },
+    "valid_until": {
+      "type": "string",
+      "default": ""
+    },
+    "imageID": {
+      "type": "number"
+    },
+    "recipients": {
+      "type": "array",
+      "default": []
+    },
+    "textColor": {
+      "type": "string",
+      "default": "text-inherit"
+    }
+  },
+  "render": "file:./render.php"
+}
